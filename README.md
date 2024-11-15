@@ -43,13 +43,11 @@ event-management-system/
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/your-username/event-management-system.git
 cd event-management-system
 
 
 2. Install Dependencies
-bash
 npm install
 
 3. Configure MongoDB Connection
@@ -58,7 +56,6 @@ javascript
 mongoose.connect('mongodb://localhost:27017/event_management', { useNewUrlParser: true, useUnifiedTopology: true })
 
 4. Start the Server
-bash
 node server.js
 The server will run at http://localhost:3001.
 
@@ -151,7 +148,6 @@ Use Postman to make requests to the various API endpoints to test user registrat
 ##Future Enhancements
 1.Email Notifications for event updates.
 Install a Mailing Library: Use a library like nodemailer to send emails.
-bash
 npm install nodemailer
 Update Event Route: Modify the /api/events route in routes/events.js to send emails when an event is created, updated, or deleted.
 
@@ -162,7 +158,6 @@ In this service, use nodemailer to send email updates.
 2.Payment Integration with Stripe API.
 To add payment processing with Stripe:
 Install Stripe SDK:
-bash
 npm install stripe
 Set Up a Route for Payment Processing:
 Add a new route in routes/payments.js (or in routes/tickets.js if you prefer).
@@ -175,7 +170,6 @@ In a new file (e.g., services/paymentService.js), set up Stripe payment function
 For improved security, add features like password hashing, token-based authentication, and role-based access control.
 Hash Passwords:
 Install bcrypt to securely hash passwords.
-bash
 npm install bcrypt
 Update the user registration endpoint in routes/users.js to hash passwords before storing them.
 
