@@ -37,7 +37,7 @@ event-management-system/
 │   └── tickets.js 
 ├── server.js 
 └── package.json
-
+---
 
 ## Setup Instructions
 
