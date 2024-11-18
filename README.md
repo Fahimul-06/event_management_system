@@ -44,7 +44,7 @@ event-management-system/
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/event-management-system.git
+git clone https://github.com/Fahimul-06/event-management-system.git
 cd event-management-system
 
 
@@ -177,5 +177,5 @@ Update the user registration endpoint in routes/users.js to hash passwords befor
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-arduino
+
 This `README.md` covers the setup, features, and API usage for the Event Management System, helping new users understand the purpose and functionality of the backend.
