@@ -8,7 +8,9 @@ router.post('/', async (req, res) => {
   try {
     await newTicket.save();
     res.status(201).json(newTicket);
-  } catch (error) {
+  } 
+  catch (error)
+  {
     res.status(400).json({ error: error.message });
   }
 });
@@ -18,7 +20,9 @@ router.get('/:userId', async (req, res) => {
   try {
     const tickets = await Ticket.find({ userId: req.params.userId }).populate('eventId');
     res.status(200).json(tickets);
-  } catch (error) {
+  }
+  catch (error)
+  {
     res.status(400).json({ error: error.message });
   }
 });
